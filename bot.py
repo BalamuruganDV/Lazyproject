@@ -94,11 +94,11 @@ class Bot(Client):
                 yield message
                 current += 1
 
-if __name__ == '__main__': 
+#if __name__ == '__main__': 
 
-    port = int(os.environ.get('PORT', 5000))
-    app = Bot()
-    app.run(host='0.0.0.0', port=port)
+#    port = int(os.environ.get('PORT', 5000))
+#    app = Bot()
+#    app.run(host='0.0.0.0', port=port)
     
-#app = Bot()
-#app.run()
+app = Bot()
+app.run()
