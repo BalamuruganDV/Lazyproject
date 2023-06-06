@@ -23,7 +23,7 @@ Here is the help for my COMMANDS."""
 <b>✮ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾-𝙳𝙱</b>
 <b>✮ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄</b>
 <b>✮ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: 𝚅𝟺𝟹.𝟶.𝟷</b>
-<b>✮ 𝙶𝚁𝙾𝚄𝙿: <a href=https://t.me/Hotstar_Movies_Com>𝙷𝙾𝚃𝚂𝚃𝙰𝚁-𝙼𝙾𝚅𝙸𝙴𝚂</a></b>"""
+<b>✮ 𝙶𝚁𝙾𝚄𝙿: <a href=https://t.me/Hotstar_movies_site/>𝙷𝙾𝚃𝚂𝚃𝙰𝚁-𝙼𝙾𝚅𝙸𝙴𝚂</a></b>"""
 
     SOURCE_TXT = """<b>NOTE:</b>
 - Lazy Princess is an open source project. 
