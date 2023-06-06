@@ -18,4 +18,4 @@ pynewtonmath
 openai
 
 #---others----#
-speedtest==0.0.1
+telegraph==2.2.0
