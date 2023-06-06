@@ -1,8 +1,3 @@
-    # Credit @LazyDeveloper.
-    # Please Don't remove credit.
-        # Born to make history @LazyDeveloper !
-
-    # Thank you LazyDeveloper for helping us in this Journey
 from pyrogram import Client, filters
 from pyrogram.enums import MessageMediaType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply
@@ -36,7 +31,7 @@ async def refunc(client, message):
             else:
                 markup = InlineKeyboardMarkup(
                     [[InlineKeyboardButton("📁 Document", callback_data="upload_document")]])
-            # Lazy-WarninG -> Please Dont chnage anything after this Line 
+            # WarninG -> Please Dont chnage anything after this Line 
             await message.reply_text(f"**Select the output file type**\n**🎞New Name** :- ```{out_filename}```", reply_to_message_id=mg_id, reply_markup=markup)
 
         except:
@@ -58,6 +53,6 @@ async def refunc(client, message):
             else:
                 markup = InlineKeyboardMarkup(
                     [[InlineKeyboardButton("📁 Document", callback_data="upload_document")]])
-            # Lazy-WarninG -> Please Dont chnage anything after this Line 
+            # WarninG -> Please Dont chnage anything after this Line 
             await message.reply_text(f"**Select the output file type**\n**🎞New Name** :- ```{out_filename}```",
                                      reply_to_message_id=mg_id, reply_markup=markup)
