@@ -37,6 +37,29 @@ logger.setLevel(logging.ERROR)
 req_channel = REQ_CHANNEL
 BUTTONS = {}
 SPELL_CHECK = {}
+FILTER_MODE = {}
+
+@Client.on_message(filters.command('autofilter'))
+async def fil_mod(client, message): 
+      mode_on = ["yes", "on", "true"]
+      mode_of = ["no", "off", "false"]
+
+      try: 
+         args = message.text.split(None, 1)[1].lower() 
+      except: 
+         return await message.reply("**ᏆΝᏟϴᎷᏢᏞᎬͲᎬ ᏟϴᎷᎷᎪΝᎠ...**")
+      
+      m = await message.reply("**ՏᎬͲͲᏆΝᏀ.../**")
+
+      if args in mode_on:
+          FILTER_MODE[str(message.chat.id)] = "True" 
+          await m.edit("**ᎪႮͲϴҒᏆᏞͲᎬᎡ ᎬΝᎪᏴᏞᎬᎠ**")
+      
+      elif args in mode_of:
+          FILTER_MODE[str(message.chat.id)] = "False"
+          await m.edit("**ᎪႮͲϴҒᏆᏞͲᎬᎡ ᎠᏆՏᎪᏴᏞᎬᎠ**")
+      else:
+          await m.edit("ႮՏᎬ :- /autofilter on ϴᎡ /autofilter off")
 
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
