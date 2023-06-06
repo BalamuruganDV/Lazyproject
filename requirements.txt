@@ -16,3 +16,6 @@ aiofiles
 dnspython
 pynewtonmath
 openai
+
+#---others----#
+speedtest==0.0.1
