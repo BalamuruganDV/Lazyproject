@@ -591,15 +591,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ], [
-            InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper')
-        ], [
-            InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
-            InlineKeyboardButton('♥️ About ♥️', callback_data='about')
-        ],[
-            InlineKeyboardButton('Watch Tutorial', url='https://youtube.com/LazyDeveloper')
+            InlineKeyboardButton('➕ ᎪᎠᎠ ᎷᎬ Ͳϴ ᎽϴႮᎡ ᏀᎡϴႮᏢ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+            InlineKeyboardButton('ՏᎬᎪᎡᏟᎻ🔍', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('ᏀᎡϴႮᏢ🎀', url='https://t.me/Hotstar_movies_site')
+            ],[      
+            InlineKeyboardButton('ᏟϴᎷᎷᎪΝᎠՏ❓', callback_data='help'),
+            InlineKeyboardButton('ᎪᏴϴႮͲ🔖', callback_data='about')
+            ],[
+            InlineKeyboardButton('ᏟᏞϴՏᎬ💤', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
