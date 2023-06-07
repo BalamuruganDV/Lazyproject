@@ -1,9 +1,3 @@
-    # Credit @LazyDeveloper.
-    # Please Don't remove credit.
-        # Born to make history @LazyDeveloper !
-
-    # Thank you LazyDeveloper for helping us in this Journey
-
 import math
 import time 
 from Script import script
@@ -80,9 +74,3 @@ def convert(seconds):
     minutes = seconds // 60
     seconds %= 60      
     return "%d:%02d:%02d" % (hour, minutes, seconds)
-
-         
-
-
-
-
