@@ -26,11 +26,11 @@ Here is the help for my COMMANDS."""
 <b>✮ 𝙶𝚁𝙾𝚄𝙿: <a href=https://t.me/Hotstar_movies_site/>𝙷𝙾𝚃𝚂𝚃𝙰𝚁-𝙼𝙾𝚅𝙸𝙴𝚂</a></b>"""
 
     SOURCE_TXT = """<b>NOTE:</b>
-- Lazy Princess is an open source project. 
-- Source - https://github.com/LazyDeveloperr/LazyPrincess  
+- Itachi is not an open source project. 
 
 <b>DEVS:</b>
-- <a href=https://t.me/LazyDeveloper>LazyDeveloper</a>"""
+- <a href=https://t.me/Tanujairam>𝚃𝙰𝙽𝚄𝙹𝙰𝙸𝚁𝙰𝙼</a>
+- <a href=https://t.me/balamurugan714>𝙱𝙰𝙻𝙰𝙼𝚄𝚁𝚄𝙶𝙰𝙽</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and LazyPriness will respond whenever that keyword hits the message
@@ -121,7 +121,7 @@ ID - <code>{}</code>
 Name - {}
 """
     PROGRESS_BAR = """\n
-╭━━━━❰ PROGRESS BAR ❱━➣
+╭━━━━❰ 𝙐𝘾𝙃𝙄𝙃𝘼 𝙋𝙍𝙊𝙂𝙍𝙀𝙎𝙎 ❱━➣
 ┣⪼ 🗂️ : {1} | {2}
 ┣⪼ ⏳️ : {0}%
 ┣⪼ 🚀 : {3}/s
