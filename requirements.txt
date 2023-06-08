@@ -31,3 +31,6 @@ ffmpeg
 googletrans==3.1.0a0
 gTTS==2.3.1
 heroku3
+
+#---wikipedia---#
+wikipedia
