@@ -34,3 +34,4 @@ heroku3
 
 #---wikipedia---#
 wikipedia
+aiohttp
