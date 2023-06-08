@@ -81,13 +81,13 @@ async def doc(bot, update):
     new_filename = new_name.split(":-")[1]
     file = update.message.reply_to_message
     file_path = f"downloads/{new_filename}"
-    ms = await update.message.edit("\n༻☬ད 𝘽𝙪𝙞𝙡𝙙𝙞𝙣𝙜 𝙇𝙖𝙯𝙮 𝙈𝙚𝙩𝙖𝘿𝙖𝙩𝙖...")
+    ms = await update.message.edit("\n༻☬ད 𝘽𝙪𝙞𝙡𝙙𝙞𝙣𝙜 𝙪𝙘𝙝𝙞𝙝𝙖 𝙈𝙚𝙩𝙖𝘿𝙖𝙩𝙖...")
     c_time = time.time()
     try:
         path = await bot.download_media(
                 message=file,
                 progress=progress_for_pyrogram,
-                progress_args=("**\n  ღ♡ ꜰɪʟᴇ ᴜɴᴅᴇʀ ᴄᴏɴꜱᴛʀᴜᴄᴛɪᴏɴ... ♡♪**", ms, c_time))
+                progress_args=("**\n  ღ♡ ꜰɪʟᴇ ᴜɴᴅᴇʀ ᴄᴏɴꜱᴛʀᴜᴄᴛɪᴏɴ... ♡♪... ♡♪**", ms, c_time))
     except Exception as e:
         await ms.edit(e)
         return 
@@ -125,7 +125,7 @@ async def doc(bot, update):
         img = Image.open(ph_path)
         img.resize((320, 320))
         img.save(ph_path, "JPEG")
-    await ms.edit("三 𝘗𝘳𝘦𝘱𝘢𝘳𝘪𝘯𝘨 𝘵𝘰 𝘳𝘦𝘤𝘦𝘪𝘷𝘦 𝘓𝘢𝘻𝘺 𝘧𝘪𝘭𝘦...︻デ═一")
+    await ms.edit("三 𝘗𝘳𝘦𝘱𝘢𝘳𝘪𝘯𝘨 𝘵𝘰 𝘳𝘦𝘤𝘦𝘪𝘷𝘦 𝘶𝘤𝘩𝘪𝘩𝘢 𝘧𝘪𝘭𝘦...︻デ═一")
     c_time = time.time() 
     try:
        if type == "document":
@@ -135,7 +135,7 @@ async def doc(bot, update):
                    thumb=ph_path, 
                    caption=caption, 
                    progress=progress_for_pyrogram,
-                   progress_args=( "**⎝⎝✧ ʀᴇᴄɪᴇᴠɪɴɢ ꜰɪʟᴇ ꜰʀᴏᴍ ʟᴀᴢʏ ꜱᴇʀᴠᴇʀ ✧⎠⎠**",  ms, c_time))
+                   progress_args=( "**⎝⎝✧ ʀᴇᴄɪᴇᴠɪɴɢ ꜰɪʟᴇ ꜰʀᴏᴍ ᴜᴄʜɪʜᴀ ꜱᴇʀᴠᴇʀ ✧⎠⎠**",  ms, c_time))
        elif type == "video": 
            await bot.send_video(
 	        update.message.chat.id,
@@ -144,7 +144,7 @@ async def doc(bot, update):
 	        thumb=ph_path,
 	        duration=duration,
 	        progress=progress_for_pyrogram,
-	        progress_args=( "**⎝⎝✧ ʀᴇᴄɪᴇᴠɪɴɢ ꜰɪʟᴇ ꜰʀᴏᴍ ʟᴀᴢʏ ꜱᴇʀᴠᴇʀ ✧⎠⎠**",  ms, c_time))
+	        progress_args=( "**⎝⎝✧ ʀᴇᴄɪᴇᴠɪɴɢ ꜰɪʟᴇ ꜰʀᴏᴍ ᴜᴄʜɪʜᴀ ꜱᴇʀᴠᴇʀ ✧⎠⎠**",  ms, c_time))
        elif type == "audio": 
            await bot.send_audio(
 	        update.message.chat.id,
@@ -153,7 +153,7 @@ async def doc(bot, update):
 	        thumb=ph_path,
 	        duration=duration,
 	        progress=progress_for_pyrogram,
-	        progress_args=( "**⎝⎝✧ ʀᴇᴄɪᴇᴠɪɴɢ ꜰɪʟᴇ ꜰʀᴏᴍ ʟᴀᴢʏ ꜱᴇʀᴠᴇʀ ✧⎠⎠**",  ms, c_time   )) 
+	        progress_args=( "***",  ms, c_time   )) 
     except Exception as e: 
         await ms.edit(f" Erro {e}") 
         os.remove(file_path)
@@ -284,7 +284,7 @@ async def next_page(bot, query):
                 ]
     btn.insert(0,
         [ 
-	    InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://telegram.me/LazyDeveloper')
+	    InlineKeyboardButton(text="⚡ɢʀᴏᴜᴘ⚡", url='https://t.me/Hotstar_movies_site')
         ] 
     )
 
@@ -646,7 +646,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper'),
+            InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ 1🎀', url='https://t.me/balamurugan714'),
+            InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ 1🎀', url='https://t.me/Tanujairam')
+        ], [
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -707,9 +709,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT ISSUE 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
-            ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
+                InlineKeyboardButton(text=f"🐞 REPORT ISSUE 🐞", url=f"https://telegram.me/balamurugan714")
 
             ]]
             btn_lzdv = [
@@ -735,9 +735,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT ISSUE 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
-            ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
+                InlineKeyboardButton(text=f"🐞 REPORT ISSUE 🐞", url=f"https://telegram.me/balamurugan714")
+            
             ]]
             btn_lzdv = [
                 [
@@ -761,9 +760,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT ISSUE 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
-            ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
+                InlineKeyboardButton(text=f"🐞 REPORT ISSUE 🐞", url=f"https://telegram.me/balamurugan714")
 
             ]]
             btn_lzdv = [
@@ -788,9 +785,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT ISSUE 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
-            ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
+                InlineKeyboardButton(text=f"🐞 REPORT ISSUE 🐞", url=f"https://telegram.me/balamurugan714")
+
             ]]
             btn_lzdv = [
                 [
@@ -814,9 +810,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT ISSUE 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
-            ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
+                InlineKeyboardButton(text=f"🐞 REPORT ISSUE 🐞", url=f"https://telegram.me/balamurugan714")
 
             ]]
             btn_lzdv = [
