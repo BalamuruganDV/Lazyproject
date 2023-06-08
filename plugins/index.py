@@ -5,7 +5,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, ChatAdminRequired, UsernameInvalid, UsernameNotModified
 from info import ADMINS, LAZY_RENAMERS
 from info import INDEX_REQ_CHANNEL as LOG_CHANNEL
-from info import LAZY_MODE 
+from info import RENAMER_MODE 
 from database.ia_filterdb import save_file
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from utils import temp
@@ -86,7 +86,7 @@ async def send_for_index(bot, message):
         return await message.reply('This may be group and i am not a admin of the group.')
 
     if message.from_user.id in ADMINS:
-        if (LAZY_MODE==True):
+        if (RENAMER_MODE==True):
             file = getattr(message, message.media.value)
             filename = file.file_name
             filesize = humanize.naturalsize(file.file_size) 
