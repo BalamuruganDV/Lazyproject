@@ -17,6 +17,11 @@ dnspython
 pynewtonmath
 openai
 
+#---ytdl----#
+youtube-search-python
+youtube-search
+yt-dlp==2023.2.17
+
 #---others----#
 telegraph==2.2.0
 psutil==5.9.4
