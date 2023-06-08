@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import FloodWait
 import humanize
-from info import ADMINS , FLOOD, RENAMER_MODE, LAZY_RENAMERS
+from info import ADMINS , FLOOD, RENAMER_MODE
 import random
 
 @Client.on_message( filters.private & (filters.document | filters.audio | filters.video))
