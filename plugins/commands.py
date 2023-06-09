@@ -66,7 +66,7 @@ async def start(client, message):
         try:
             invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
         except ChatAdminRequired:
-            logger.error("Hey Sona, Ek dfa check kr lo ki main Channel mei Add hu ya nhi...!")
+            logger.error("Hey Sona, check once whether I am added to the channel or not...!")
             return
         btn = [
             [
@@ -358,7 +358,7 @@ async def delete_all_index(bot, message):
 @Client.on_callback_query(filters.regex(r'^autofilter_delete'))
 async def delete_all_index_confirm(bot, message):
     await Media.collection.drop()
-    await message.answer('♥️ Thank You Uchiha Developer ♥️')
+    await message.answer('♥️ Thank You ♥️')
     await message.message.edit('Succesfully Deleted All The Indexed Files.')
 
 
