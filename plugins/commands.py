@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🔔 group 🤖', url='https://t.me/Hotstar_movies_site')
+                InlineKeyboardButton('ᎷᎽ ᏟᏞᎪΝ❛•❟', url='https://t.me/Hotstar_movies_site')
             ],
             [
-                InlineKeyboardButton('🙆🏻 Help 🦾', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('ᎻᎬᏞᏢ', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ],[
             InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
             ]
@@ -44,15 +44,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ ᎪᎠᎠ ᎷᎬ Ͳϴ ᎽϴႮᎡ ᏀᎡϴႮᏢ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('❛☉❟ ᎪᎠᎠ ᎷᎬ Ͳϴ ᎽϴႮᎡ ᏀᎡϴႮᏢ ❛☉❟', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ՏᎬᎪᎡᏟᎻ🔍', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('ᏀᎡϴႮᏢ🎀', url='https://t.me/Hotstar_movies_site')
+            InlineKeyboardButton('ՏᎬᎪᎡᏟᎻ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('ᎷᎽ ᏟᏞᎪΝ❛❟❛', url='https://t.me/Hotstar_movies_site')
             ],[      
-            InlineKeyboardButton('ᏟϴᎷᎷᎪΝᎠՏ❓', callback_data='help'),
-            InlineKeyboardButton('ᎪᏴϴႮͲ🔖', callback_data='about')
+            InlineKeyboardButton('ᏟϴᎷᎷᎪΝᎠՏ✇', callback_data='help'),
+            InlineKeyboardButton('ᎪᏴϴႮͲ❛•❟', callback_data='about')
             ],[
-            InlineKeyboardButton('ᏟᏞϴՏᎬ💤', callback_data='close_data')
+            InlineKeyboardButton('ᏟᏞϴՏᎬ࿋', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -71,7 +71,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "ᎫϴᏆΝ ᎷᎽ ᏟᏞᎪΝ Ͳϴ ႮՏᎬ ᏆͲᎪᏟᎻᏆ❛☉❟", url=invite_link.invite_link
                 )
             
             ]
@@ -93,15 +93,17 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ ᎪᎠᎠ ᎷᎬ Ͳϴ ᎽϴႮᎡ ᏀᎡϴႮᏢ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ('➕ ᎪᎠᎠ ᎷᎬ Ͳϴ ᎽϴႮᎡ ᏀᎡϴႮᏢ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ՏᎬᎪᎡᏟᎻ🔍', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('ᏀᎡϴႮᏢ🎀', url='https://t.me/Hotstar_movies_site')
+            InlineKeyboardButton('❛☉❟ ᎪᎠᎠ ᎷᎬ Ͳϴ ᎽϴႮᎡ ᏀᎡϴႮᏢ ❛☉❟', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+            InlineKeyboardButton('ՏᎬᎪᎡᏟᎻ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('ᎷᎽ ᏟᏞᎪΝ❛❟❛', url='https://t.me/Hotstar_movies_site')
             ],[      
-            InlineKeyboardButton('ᏟϴᎷᎷᎪΝᎠՏ❓', callback_data='help'),
-            InlineKeyboardButton('ᎪᏴϴႮͲ🔖', callback_data='about')
+            InlineKeyboardButton('ᏟϴᎷᎷᎪΝᎠՏ✇', callback_data='help'),
+            InlineKeyboardButton('ᎪᏴϴႮͲ❛•❟', callback_data='about')
             ],[
-            InlineKeyboardButton('ᏟᏞϴՏᎬ💤', callback_data='close_data')
+            InlineKeyboardButton('ᏟᏞϴՏᎬ࿋', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
