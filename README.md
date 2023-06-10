@@ -1,13 +1,13 @@
  ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝚆𝙴𝙻𝙲𝙾𝙼𝙴+𝚃𝙾+𝙻𝚄𝙽𝙰-𝙱𝙾𝚃𝚂!;𝙲𝚁𝙴𝙰𝚃𝙴𝙳+𝙱𝚈+𝙱𝙰𝙻𝙰𝙼𝚄𝚁𝚄𝙶𝙰𝙽!)
 <p align="center">
-  <img src="https://telegra.ph/file/28c3d6a3a6f8a372a9c21.jpg" alt="𝙻𝚄𝙽𝙰-𝙴𝚇𝚃𝚁𝙰-𝙵𝙴𝙰𝚃𝚄𝚁𝙴𝚂Logo">
+  <img src="https://graph.org/file/89c49959bd7ba0d478482.jpg" alt="𝙻𝚄𝙽𝙰-𝙴𝚇𝚃𝚁𝙰-𝙵𝙴𝙰𝚃𝚄𝚁𝙴𝚂Logo">
 </p>
 
 <p align="center">
-  <img src="(https://telegra.ph/file/28c3d6a3a6f8a372a9c21.jpg)"
+  <img src="(https://graph.org/file/89c49959bd7ba0d478482.jpg)"
 </p>
 <h1 align="center">
-  <b> LUNA Bot </b>
+  <b> Itachi Bot </b>
 </h1>
 
 ## ⚡️Features
