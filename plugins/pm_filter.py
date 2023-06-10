@@ -610,15 +610,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ ᎪᎠᎠ ᎷᎬ Ͳϴ ᎽϴႮᎡ ᏀᎡϴႮᏢ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('❛☉❟ ᎪᎠᎠ ᎷᎬ Ͳϴ ᎽϴႮᎡ ᏀᎡϴႮᏢ ❛☉❟', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ՏᎬᎪᎡᏟᎻ🔍', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('ᏀᎡϴႮᏢ🎀', url='https://t.me/Hotstar_movies_site')
+            InlineKeyboardButton('ՏᎬᎪᎡᏟᎻ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('ᎷᎽ ᏟᏞᎪΝ❛❟❛', url='https://t.me/Hotstar_movies_site')
             ],[      
-            InlineKeyboardButton('ᏟϴᎷᎷᎪΝᎠՏ❓', callback_data='help'),
-            InlineKeyboardButton('ᎪᏴϴႮͲ🔖', callback_data='about')
+            InlineKeyboardButton('ᏟϴᎷᎷᎪΝᎠՏ✇', callback_data='help'),
+            InlineKeyboardButton('ᎪᏴϴႮͲ❛•❟', callback_data='about')
             ],[
-            InlineKeyboardButton('ᏟᏞϴՏᎬ💤', callback_data='close_data')
+            InlineKeyboardButton('ᏟᏞϴՏᎬ࿋', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -626,17 +626,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('♥️ Thank You')
+        await query.answer('ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴍʏ ᴄʟᴀɴ𖣘')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
-            InlineKeyboardButton('Auto Filter', callback_data='autofilter')
+            InlineKeyboardButton('𝙼𝙰𝙽𝚄𝙰𝙻 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='manuelfilter'),
+            InlineKeyboardButton('𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='autofilter')
         ], [
-            InlineKeyboardButton('Connection', callback_data='coct'),
-            InlineKeyboardButton('Extra Mods', callback_data='extra')
+            InlineKeyboardButton('𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽', callback_data='coct'),
+            InlineKeyboardButton('𝙴𝚇𝚃𝚁𝙰 𝙼𝙾𝙳𝚂', callback_data='extra')
         ], [
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🦠 Status', callback_data='stats')
+            InlineKeyboardButton('❟❛❟ ᎻϴᎷᎬ', callback_data='start'),
+            InlineKeyboardButton('ՏͲᎪͲႮՏ', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -646,13 +646,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ 1🎀', url='https://t.me/balamurugan714'),
-            InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ 1🎀', url='https://t.me/Tanujairam')
+            InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ 1❟❛❟', url='https://t.me/balamurugan714'),
+            InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ 1❛❟❛', url='https://t.me/Tanujairam')
         ], [
-            InlineKeyboardButton('♥️ Source', callback_data='source')
+            InlineKeyboardButton('𝚂𝙾𝚄𝚁𝙲𝙴', callback_data='source')
         ], [
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('❟❛❟ ᎻϴᎷᎬ', callback_data='start'),
+            InlineKeyboardButton('ᏟᏞϴՏᎬ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -769,7 +769,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ]]
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
             reply_markup = InlineKeyboardMarkup(btn)
-            await client.send_message(int(user_id), f"✅ Hey sona, Your requested content named `{movie}` is now available in our database! You can easily get this movie by searching it's correct name in our official group...\n\n❤ Thank You for the contribution", reply_markup=reply_markup)
+            await client.send_message(int(user_id), f"✅ Hey uchiha, Your requested content named `{movie}` is now available in our database! You can easily get this movie by searching it's correct name in our official group...\n\n❤ Thank You for the contribution", reply_markup=reply_markup)
             await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Upload done ✅.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋", reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
@@ -1136,7 +1136,7 @@ async def auto_filter(client, msg, spoll=False):
                                                                                                                                         ]))
                 
                 l = await message.reply_text(text=f"△ 𝙷𝚎𝚢 𝚜𝚘𝚗𝚊 `{message.from_user.first_name}` 😎,\n\nʏᴏᴜʀ ʀᴇQᴜᴇꜱᴛ ʜᴀꜱ ʙᴇᴇɴ ꜱᴇɴᴛ ᴛᴏ ᴏᴜʀ **ᴀᴅᴍɪɴ'ꜱ ᴅᴀꜱʜʙᴏᴀʀᴅ** !\nᴘʟᴇᴀꜱᴇ ᴋᴇᴇᴘ ꜱᴏᴍᴇ ᴘᴀᴛɪᴇɴᴄᴇ !\nᴛʜᴇʏ ᴡɪʟʟ ᴜᴘʟᴏᴀᴅ ɪᴛ ᴀꜱ ꜱᴏᴏɴ ᴀꜱ ᴘᴏꜱꜱɪʙʟᴇ.\n\n➟ 📝𝘾𝙤𝙣𝙩𝙚𝙣𝙩 𝙣𝙖𝙢𝙚 : `{search}`\n➟ 👮𝙍𝙚𝙦𝙪𝙚𝙨𝙩𝙚𝙙 𝘽𝙮 : `{message.from_user.first_name}`\n\n༺ @Itachi_uchihaRobot ༻\n\n✇・‥☆𝘼𝘿𝙈𝙞𝙉 𝙨𝙪𝙥𝙥𝙤𝙧𝙩☆‥・✇\n╰┈➤・☆ @Tanujairam\n╰┈➤・☆ @balamurugan714",
-                                                                                                       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("━ • ❛☉❟  ᗩᗪᗪ ʍɛ 2 ᑌᖇ Ǥᖇᗝᑌᑭ  ❛☉❟ • ━", url=f'http://t.me/{temp.U_NAME}?startgroup=true')],[InlineKeyboardButton("✪ Main Ch- ✪", url=f"https://t.me/Hotstar_movies_site")],[InlineKeyboardButton("╚»♥️ Thank You ♥️«╝", callback_data="close_data")]]))
+                                                                                                       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("━ • ❛☉❟  ᗩᗪᗪ ʍɛ 2 ᑌᖇ Ǥᖇᗝᑌᑭ  ❛☉❟ • ━", url=f'http://t.me/{temp.U_NAME}?startgroup=true')],[InlineKeyboardButton("✪ Main Ch- ✪", url=f"https://t.me/Hotstar_movies_site")],[InlineKeyboardButton("𝚃𝙷𝙰𝙽𝙺 𝚈𝙾𝚄 ❛☉❟", callback_data="close_data")]]))
                 await asyncio.sleep(20)
                 await l.delete()    
                 if settings["spell_check"]:
