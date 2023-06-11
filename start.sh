@@ -6,7 +6,7 @@ else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /Uchiha-itachi
 fi
-cd /Luna-latest
+cd /Uchiha-itachi
 pip3 install -U -r requirements.txt
 echo "Starting Uchiha❟❛❟...."
 python3 bot.py
