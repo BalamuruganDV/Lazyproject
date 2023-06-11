@@ -66,6 +66,10 @@
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
             "value": "Telegram_files",
             "required": false
+        },
+        "REQ_CHANNEL": {
+            "description": "Id of the channel where to show the requested movie logs.",
+            "required": true 
         }
     },
     "addons": [],
