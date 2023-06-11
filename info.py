@@ -58,7 +58,7 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), Fals
 
 #Renamer Configs
 FLOOD = int(environ.get("FLOOD", "10"))
-RENAMER_MODE = bool(environ.get("RENAMER_MODE", 'True'))
+RENAMER_MODE = bool(environ.get("RENAMER_MODE", 'False'))
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL'))
 
 #ai
