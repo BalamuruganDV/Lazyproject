@@ -6,7 +6,7 @@ import humanize
 from info import ADMINS , FLOOD, RENAMER_MODE
 import random
 
-@Client.on_message( filters.private ~ filters.forwarded & (filters.document | filters.audio | filters.video))
+@Client.on_message(filters.private & ~filters.forwarded & (filters.document | filters.audio | filters.video))
 async def rename_start(client, message):
     if (RENAMER_MODE==True):
         if message.from_user.id in ADMINS :
