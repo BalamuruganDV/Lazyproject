@@ -10,7 +10,7 @@ import random
 async def rename_start(client, message):
     if (RENAMER_MODE==True):
         if message.from_user.id in ADMINS :
-            file = getattr(message, message.media.value)
+            file = getattr(message.reply_to_message, message.reply_to_message.media.value)
             filesize = humanize.naturalsize(file.file_size) 
             filename = file.file_name
             text = f"""✏ Rename \n**Please tell, what should i do with this file.?**\n\n**File Name** :- `{filename}`\n\n<b>**File Size** </b>:- `{filesize}`"""
